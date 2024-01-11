@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
 }
 
 #hero-section {
@@ -42,7 +43,8 @@ body {
     width: 100%;
 }
 
-.modal-btn, .notify-btn {
+.modal-btn,
+.notify-btn {
     border: 1px solid #3B28EA;
     border-radius: 2rem;
     color: #3B28EA;
@@ -53,7 +55,8 @@ body {
     padding: 0.5rem 2rem;
 }
 
-.modal-btn:hover, .notify-btn:hover {
+.modal-btn:hover,
+.notify-btn:hover {
     background-color: #4533EB;
     color: white;
 }
@@ -66,7 +69,7 @@ body {
 .fixed {
     background-color: white;
     box-shadow: 0 0 8px 0 rgba(88, 88, 88, 0.19);
-    padding-bottom: 0.75rem; 
+    padding-bottom: 0.75rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -79,6 +82,7 @@ body {
     0% {
         transform: translate3d(0, -100%, 0);
     }
+
     100% {
         transform: translate3d(0, 0, 0);
     }
@@ -89,7 +93,8 @@ body {
     padding-bottom: 0.5rem;
 }
 
-.modal-title, .modal-subtitle {
+.modal-title,
+.modal-subtitle {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.3;
@@ -106,16 +111,21 @@ body {
     background-color: #3B28EA;
     border-color: #3B28EA;
     border-radius: 2rem;
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
     padding: 0.75rem 1.5rem;
 }
 
+.submit-button:hover {
+    background-color: #4533EB;
+    border-color: #4533EB;
+    color: #fff;
+}
+
 .hero-title {
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 3.75rem;
     line-height: 1.3;
 }
 
@@ -160,8 +170,8 @@ body {
 
 .button-float {
     position: absolute;
-    top: 4px;
-    right: 8rem;
+    top: 7%;
+    right: 17.25%;
 }
 
 .redirect-button:hover {
@@ -177,9 +187,11 @@ body {
     0% {
         transform: translate(0, 0px);
     }
+
     50% {
         transform: translate(0, -10px);
     }
+
     100% {
         transform: translate(0, 0px);
     }
@@ -223,7 +235,7 @@ body {
 }
 
 #more-features-section {
-    padding: 144px 0;
+    padding: 9rem 0;
     text-align: center;
 }
 
@@ -246,7 +258,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.7;
-    width: 300px;
+    width: 75%;
     margin: auto;
     margin-bottom: 1rem;
 }
@@ -333,11 +345,97 @@ body {
     background-color: rgb(227, 219, 219);
 }
 
+.faq_container {
+    border-bottom: 2px solid #ddd;
+}
+
+.faq_question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.answer {
+    padding: 0 10px 20px;
+    line-height: 1.5rem;
+}
+
+.fqa_headline_container h2 span {
+    font-weight: 700;
+}
+
+.faq_question-text h3 {
+    font-size: 22px;
+}
+
+.icon.active {
+    background: transparent;
+    border: 2px solid #3B28EA;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon-shape {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.icon .icon-shape::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 4px;
+    background: #3B28EA;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.icon .icon-shape::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 30px;
+    background: #3B28EA;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.icon .icon-shape.active::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: all 0.5s ease;
+}
+
+.icon .icon-shape.active::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: all 0.5s ease;
+}
+
 footer {
     padding: 2.5rem 0;
 }
 
-footer a, p {
+footer a,
+p {
     color: #898D98;
     font-size: 18px;
     font-weight: 400;
