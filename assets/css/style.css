@@ -338,7 +338,7 @@ body {
     background-color: white;
     color: #3B28EA;
     padding: 12px 24px;
-    width: 235px;
+    width: auto;
 }
 
 #call-to-action-section .redirect-button:hover {
