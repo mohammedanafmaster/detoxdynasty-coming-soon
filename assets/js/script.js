@@ -1,15 +1,3 @@
-// Progress Bar
-
-document.addEventListener("DOMContentLoaded", function () {
-  const progressBar = document.querySelector("#progress-bar");
-
-  window.addEventListener("scroll", function () {
-    const max = document.body.scrollHeight - window.innerHeight;
-    const progress = (window.pageYOffset / max) * 100;
-    progressBar.style.width = progress + "%";
-  });
-});
-
 // Navigation bar slide-down animation
 
 document.addEventListener("DOMContentLoaded", function () {

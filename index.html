@@ -6,10 +6,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="DetoxDynasty is a Health-EdTech website that emphasizes on helping people, around the world, quit any of their bad or harmful addictions. It's ulterior motive is to guide its users with relevant information on specific topics and make them feel free & healthy in a natural & habitual manner. The official website will be made live soon." />	<!-- Add an appropriate, 4 to 6 sentence long, seo-friendly description of the website -->
-  <meta name="keywords" content="Quit Addictions, Addiction-Free Living, Natural Health Guidance, Wellness and Freedom, Healthy Lifestyle" />	<!-- Add appropriate 4 to 5 keywords to help web crawlers index the website better -->
-  <meta name="author" content="Mohammed Anaf Master" />	<!-- Add the name of the author of the website -->
-  <meta name="robots" content="index, follow" />	<!-- Add the type of robots that should be allowed to index the website -->
+  <meta name="description"
+    content="DetoxDynasty is a Health-EdTech website that emphasizes on helping people, around the world, quit any of their bad or harmful addictions. It's ulterior motive is to guide its users with relevant information on specific topics and make them feel free & healthy in a natural & habitual manner. The official website will be made live soon." /> <!-- Add an appropriate, 4 to 6 sentence long, seo-friendly description of the website -->
+  <meta name="keywords"
+    content="Quit Addictions, Addiction-Free Living, Natural Health Guidance, Wellness and Freedom, Healthy Lifestyle" /> <!-- Add appropriate 4 to 5 keywords to help web crawlers index the website better -->
+  <meta name="author" content="Mohammed Anaf Master" /> <!-- Add the name of the author of the website -->
+  <meta name="robots" content="index, follow" />  <!-- Add the type of robots that should be allowed to index the website -->
+  <meta name="theme-color" content="#3B28EA"> <!-- Add the theme color of the website to match with the browser's address bar -->
 
   <!-- Title of the website -->
   <title>Home | DetoxDynasty</title>
@@ -32,19 +35,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/android-chrome-512x512.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon/android-chrome-512x512.png" />
   <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 </head>
 
 <body>
   <!-- Head section of the document -->
-
-  <!-- Progress Bar -->
-  <div id="progress-bar-container">
-    <div id="progress-bar">
-    </div>
-  </div>
 
   <!-- Navigation bar -->
   <header>
@@ -382,6 +379,19 @@
 
   <!-- External Javascript -->
   <script src="./assets/js/script.js"></script>
+
+  <!-- Service Worker Javascript -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./assets/js/service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+    }
+  </script>
 </body>
 
 </html>

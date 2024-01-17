@@ -1,1 +1,23 @@
-{"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+    "name": "DetoxDynasty: Your All-In-One Solution",
+    "short_name": "DetoxDynasty",
+    "description": "DetoxDynasty is a Health-EdTech website that emphasizes on helping people, around the world, quit any of their bad or harmful addictions. It's ulterior motive is to guide its users with relevant information on specific topics and make them feel free & healthy in a natural & habitual manner.",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#3B28EA",
+    "background_color": "#fff",
+    "icons": [
+        {
+            "src": "./android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
